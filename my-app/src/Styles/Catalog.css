@@ -1,19 +1,25 @@
 .Catalog-body {
     padding: 20px;
     background-color: #f9f9f9;
-    border-radius: 5px;
+    border-bottom: 3px solid black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    min-height: 16rem;
+    /* Use min-height to ensure content is visible on small screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Catalog-body h2 {
     color: #333;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .Catalog-body p {
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.6;
     color: #666;
 }
@@ -21,7 +27,7 @@
 .Catalog-body button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #0f172a;
     color: white;
     border: none;
     border-radius: 5px;
@@ -30,5 +36,21 @@
 }
 
 .Catalog-body button:hover {
-    background-color: #555;
+    background-color: #172554;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .Catalog-body {
+        padding: 10px;
+    }
+
+    .Catalog-body h2 {
+        font-size: 28px;
+    }
+
+    .Catalog-body p {
+        font-size: 18px;
+    }
 }

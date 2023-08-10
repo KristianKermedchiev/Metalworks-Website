@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 
 import "../Styles/Navbar.css";
-import { Link, NavLink } from "react-router-dom";
 
-function Navbar(){
+function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav>
-      <Link to="/" className="title">
+      <a href="#" className="title">
         Website
-      </Link>
+      </a>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
@@ -18,13 +17,13 @@ function Navbar(){
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <a href="#">Каталог</a>
         </li>
         <li>
-          <NavLink to="/services">Services</NavLink>
+        <a href="#">За нас</a>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+        <a href="#">Контакти</a>
         </li>
       </ul>
     </nav>

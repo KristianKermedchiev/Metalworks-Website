@@ -1,4 +1,4 @@
-.active {
+.active{
     background-color: #1d4ed8;
 }
 
@@ -25,7 +25,7 @@ nav ul {
 }
 
 nav ul li {
-    list-style: none;
+   list-style: none; 
 }
 
 nav ul li a {
@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:not(.active):hover {
-    background-color: #172554;
+    background-color:#172554 ;
 }
 
 nav .menu {
