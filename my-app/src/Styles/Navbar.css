@@ -1,0 +1,60 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.open {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger.open {
+    display: flex;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+}
