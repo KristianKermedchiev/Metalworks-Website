@@ -15,6 +15,7 @@ nav {
 nav .title {
     font-size: 1.5rem;
     margin: 1rem;
+    margin-left: 5rem;
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -22,6 +23,7 @@ nav .title {
 
 nav ul {
     display: flex;
+    margin-right: 7rem;
 }
 
 nav ul li {
@@ -60,9 +62,10 @@ nav .menu span {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
     nav .menu {
         display: flex;
+        margin-right: 0.5rem;
     }
 
     nav {
@@ -88,5 +91,12 @@ nav .menu span {
 
     nav ul li a {
         margin: 0.2rem 0.5rem;
+    }
+    nav .title {
+        font-size: 1.5rem;
+        margin: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
     }
 }
