@@ -1,8 +1,8 @@
 import React from 'react';
-import '../Styles/Main.css';
+import '../../Styles/About.css';
 import { Link } from 'react-router-dom';
 
-function Main() {
+function About() {
   return (
     <section className="Main-body">
       <h2>За нас</h2>
@@ -21,4 +21,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default About;
