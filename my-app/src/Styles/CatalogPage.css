@@ -1,4 +1,4 @@
-.top-section {
+.CatalogPage {
     text-align: center;
     padding: 20px;
 }
@@ -43,14 +43,12 @@
 
 .table {
     overflow-x: auto;
-    /* Enable horizontal scrolling for small screens */
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
     table-layout: fixed;
-    /* Fix table layout */
     border: 1px solid #ccc;
 }
 
@@ -64,7 +62,6 @@ td {
     padding: 8px;
     text-align: center;
     width: 50%;
-    /* Divide table into two columns */
 }
 
 .bottom-part {

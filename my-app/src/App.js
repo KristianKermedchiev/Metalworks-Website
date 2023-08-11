@@ -18,12 +18,11 @@ function App() {
       <div className='Content'>
         <Routes>
           <Route path="/" element={<MainWithCatalogAndContacts />} />
-          <Route path="/Catalog" element={<CatalogPage />} />
+          <Route path="/Catalog" element={<CatalogPageWithFooter />} />
           <Route path="/About" element={<AboutPage />} />
-          <Route path="/Contacts" element={<ContactsPage />} />
+          <Route path="/Contacts" element={<ContactsPageWithFooter />} />
         </Routes>
       </div>
-      <Footer />
     </Router>
   );
 }
@@ -34,6 +33,27 @@ function MainWithCatalogAndContacts() {
       <About />
       <Catalog />
       <Contacts />
+      <Footer />
+    </div>
+  );
+};
+
+function CatalogPageWithFooter(){
+  return (
+    <>
+    <div className='CatalogPage'>
+      <CatalogPage />
+    </div>
+      <Footer />
+      </>
+  );
+}
+
+function ContactsPageWithFooter() {
+  return (
+    <div className='ContactsPage'>
+      <ContactsPage />
+      <Footer />
     </div>
   );
 }

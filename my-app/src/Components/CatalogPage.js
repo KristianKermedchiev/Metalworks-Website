@@ -3,7 +3,7 @@ import "../Styles/CatalogPage.css";
 
 function CatalogPage() {
   return (
-    <section className="top-section">
+    <section className="CatalogPage">
       <div className="top-part">
         <h1>Черни метали</h1>
         <p>
@@ -46,10 +46,41 @@ function CatalogPage() {
               <td>cell1-6</td>
               <td>cell2-6</td>
             </tr>
+            <tr>
+              <td>cell1-6</td>
+              <td>cell2-6</td>
+            </tr>
+            <tr>
+              <td>cell1-6</td>
+              <td>cell2-6</td>
+            </tr>
+            <tr>
+              <td>cell1-6</td>
+              <td>cell2-6</td>
+            </tr>
+            <tr>
+              <td>cell1-6</td>
+              <td>cell2-6</td>
+            </tr>
+            <tr>
+              <td>cell1-6</td>
+              <td>cell2-6</td>
+            </tr>
+            <tr>
+              <td>cell1-6</td>
+              <td>cell2-6</td>
+            </tr>
+            <tr>
+              <td>cell1-6</td>
+              <td>cell2-6</td>
+            </tr>
+            <tr>
+              <td>cell1-6</td>
+              <td>cell2-6</td>
+            </tr>
           </tbody>
         </table>
       </div>
-
       <div className="bottom-part">
         <p>
           Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum

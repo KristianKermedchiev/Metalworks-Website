@@ -5,7 +5,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     min-height: 16rem;
-    /* Use min-height to ensure content is visible on small screens */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,8 +38,6 @@
 .Main-body button:hover {
     background-color: #172554;
 }
-
-/* Media queries for responsiveness */
 
 @media (max-width: 768px) {
     .Main-body {
