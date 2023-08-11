@@ -1,14 +1,19 @@
 import React from 'react';
 import '../Styles/Contacts.css';
+import { Link } from 'react-router-dom';
 
 function Contacts() {
   return (
-    <section className='contacts-body'>
+    <section className='Contacts-body'>
       <h2>Как да ни намерите</h2>
       <p>Телефон: 099999999999</p>
       <p>Адрес: Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <p>Работно време: 09:00 - 18:00 всеки делничен ден</p>
-      
+
+      <Link to="/contacts">
+        <button>Виж повече</button>
+      </Link>
+
       <div className='map-holder'>
         <iframe
           title="Google Maps"

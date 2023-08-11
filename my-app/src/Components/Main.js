@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/Main.css';
+import { Link } from 'react-router-dom';
 
 function Main() {
   return (
@@ -13,7 +14,9 @@ function Main() {
         aliquet non. Sed fermentum tellus sit amet ligula fermentum, a euismod
         nisl imperdiet.
       </p>
-      <button>Read More</button>
+      <Link to="/about">
+        <button>Виж повече</button>
+      </Link>
     </section>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from 'react-router-dom';
 import "../Styles/Navbar.css";
 
 function Navbar() {
@@ -7,9 +7,9 @@ function Navbar() {
 
   return (
     <nav>
-      <a href="#" className="title">
+      <Link to="/" className="title">
         Website
-      </a>
+      </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
@@ -17,17 +17,17 @@ function Navbar() {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <a href="#">Каталог</a>
+          <Link to="/catalog">Каталог</Link>
         </li>
         <li>
-        <a href="#">За нас</a>
+          <Link to="/about">За нас</Link>
         </li>
         <li>
-        <a href="#">Контакти</a>
+          <Link to="/contacts">Контакти</Link>
         </li>
       </ul>
     </nav>
   );
-};
+}
 
 export default Navbar;

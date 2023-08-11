@@ -1,5 +1,7 @@
 import React from 'react';
 import '../Styles/Catalog.css';
+import { Link } from 'react-router-dom';
+
 
 function Catalog() {
     return (
@@ -11,7 +13,9 @@ function Catalog() {
                 et mollis nisl imperdiet nec. Nam faucibus varius odio, sit amet hendrerit metus aliquet non.
                 Sed fermentum tellus sit amet ligula fermentum, a euismod nisl imperdiet.
             </p>
-            <button>Catalog</button>
+            <Link to="/catalog">
+                <button>Виж повече</button>
+            </Link>
         </section>
     );
 };
