@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/CatalogPage.css";
+import { Link } from "react-router-dom";
 
 function CatalogPage() {
   return (
@@ -12,7 +13,9 @@ function CatalogPage() {
           amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem
           ipsum dolor sit amet.
         </p>
-        <button>Контакти</button>
+        <Link to="/contacts">
+          <button>Виж повече</button>
+        </Link>
       </div>
 
       <div className="table">
