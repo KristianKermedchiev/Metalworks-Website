@@ -16,14 +16,14 @@ function Navbar() {
         <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
-        <li>
-          <Link to="/catalog">Каталог</Link>
+        <li> 
+          <Link to="/catalog" onClick={() => setMenuOpen(!menuOpen)} >Каталог</Link>
         </li>
         <li>
-          <Link to="/about">За нас</Link>
+          <Link to="/about" onClick={() => setMenuOpen(!menuOpen)} >За нас</Link>
         </li>
         <li>
-          <Link to="/contacts">Контакти</Link>
+          <Link to="/contacts" onClick={() => setMenuOpen(!menuOpen)}>Контакти</Link>
         </li>
       </ul>
     </nav>
