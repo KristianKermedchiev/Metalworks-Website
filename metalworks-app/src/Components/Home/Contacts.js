@@ -6,9 +6,9 @@ function Contacts() {
   return (
     <section className='Contacts-body'>
       <h2>Как да ни намерите</h2>
-      <p>Телефон: 099999999999</p>
-      <p>Адрес: Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <p>Работно време: 09:00 - 18:00 всеки делничен ден</p>
+      <p>Телефон: 0885728726</p>
+      <p>Адрес: ул. „Първа българска армия“ 11, София</p>
+      <p>Работно време: 08.30- 16.30 всеки делничен ден</p>
 
       <Link to="/contacts">
         <button>Виж повече</button>
