@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav>
       <Link to="/" className="title">
-        Website
+        КАТЕР 2004 ЕООД 
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>

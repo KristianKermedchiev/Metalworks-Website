@@ -8,10 +8,9 @@ function CatalogPage() {
       <div className="top-part">
         <h1>Черни метали</h1>
         <p>
-          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum
-          dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem
-          ipsum dolor sit amet.
+        КАТЕР 2004 ЕООД изкупува всички видове черни метали, които могат да бъдат рециклирани. Предлагаме на нашите клиенти винаги актуално високa цена за изкупуване.
+
+
         </p>
         <Link to="/contacts">
           <button>Виж повече</button>
@@ -86,10 +85,7 @@ function CatalogPage() {
       </div>
       <div className="bottom-part">
         <p>
-          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum
-          dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-          amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem
-          ipsum dolor sit amet.
+        КАТЕР 2004 ЕООД изкупува всички видове черни метали, които могат да бъдат рециклирани. Предлагаме на нашите клиенти винаги актуално високa цена за изкупуване на Желязо дебело, Чугун, Желязо дебело извън размер, Оплетена арматура, Желязо тънко (под 4 мм), Желязо смесено (тънко и дебело), Отпадъци от големи домакински уреди, Отпадъци от малки домакински уреди, копирна и принтерна техника
         </p>
       </div>
     </section>

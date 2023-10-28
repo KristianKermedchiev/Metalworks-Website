@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="Footer-body">
       <div className="footer-content">
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p>&copy; 2023 КАТЕР 2004 ЕООД. Всички права запазени.</p>
       </div>
     </footer>
   );
