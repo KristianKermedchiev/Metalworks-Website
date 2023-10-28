@@ -20,9 +20,6 @@ function Navbar() {
           <Link to="/catalog" onClick={() => setMenuOpen(!menuOpen)} >Каталог</Link>
         </li>
         <li>
-          <Link to="/about" onClick={() => setMenuOpen(!menuOpen)} >За нас</Link>
-        </li>
-        <li>
           <Link to="/contacts" onClick={() => setMenuOpen(!menuOpen)}>Контакти</Link>
         </li>
       </ul>

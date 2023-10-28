@@ -1,0 +1,78 @@
+.About-Page,
+.Contacts-body {
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 16rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-p,
+.About-Page ul li,
+.Contacts-body p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.About-p,
+.Contacts-body p {
+    margin-bottom: 10px;
+}
+
+.Contacts-body h2 {
+    margin-top: -10px;
+}
+
+.About-h1,
+h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.About-Page ul {
+    list-style-type: disc;
+    list-style: none;
+    text-align: center;
+}
+
+.map-holder {
+    position: relative;
+    padding-top: 33.33%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.map-holder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+
+    .About-Page,
+    .Contacts-body {
+        padding: 10px;
+    }
+
+    .About-p,
+    .About-Page ul li,
+    .Contacts-body p {
+        font-size: 18px;
+    }
+
+    .About-h1,
+    h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+}

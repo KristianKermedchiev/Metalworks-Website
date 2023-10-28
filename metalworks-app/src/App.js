@@ -9,7 +9,6 @@ import Catalog from './Components/Home/Catalog';
 import Contacts from './Components/Home/Contacts';
 import ContactsPage from './Components/ContactsPage';
 import CatalogPage from './Components/CatalogPage';
-import AboutPage from './Components/AboutPage';
 import AdminPage from './Components/AdminPage';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
         <Routes>
           <Route path="/" element={<MainWithCatalogAndContacts />} />
           <Route path="/Catalog" element={<CatalogPageWithFooter />} />
-          <Route path="/About" element={<AboutPageWithFooter />} />
           <Route path="/Contacts" element={<ContactsPageWithFooter />} />
           <Route path="/Admin" element={<AdminPageDisplay />} />
         </Routes>
@@ -50,15 +48,15 @@ function CatalogPageWithFooter(){
   );
 }
 
-function AboutPageWithFooter(){
-  return (
-    <div className='About-Page'>
-      <Navbar />
-      <AboutPage />
-      <Footer />
-    </div>
-  );
-}
+// function AboutPageWithFooter(){
+//   return (
+//     <div className='About-Page'>
+//       <Navbar />
+//       <AboutPage />
+//       <Footer />
+//     </div>
+//   );
+// }
 
 function ContactsPageWithFooter() {
   return (
