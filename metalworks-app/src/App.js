@@ -15,20 +15,15 @@ import AdminPage from './Components/AdminPage';
 function App() {
   return (
     <Router>
-      <Navbar />
       <div className='Content'>
         <Routes>
           <Route path="/" element={<MainWithCatalogAndContacts />} />
           <Route path="/Catalog" element={<CatalogPageWithFooter />} />
           <Route path="/About" element={<AboutPageWithFooter />} />
           <Route path="/Contacts" element={<ContactsPageWithFooter />} />
-          
+          <Route path="/Admin" element={<AdminPageDisplay />} />
         </Routes>
       </div>
-
-      <Routes>
-        <Route path="/Admin" element={<AdminPage />} />
-      </Routes>
     </Router>
   );
 }
@@ -36,6 +31,7 @@ function App() {
 function MainWithCatalogAndContacts() {
   return (
     <div className='Main'>
+      <Navbar />
       <About />
       <Catalog />
       <Contacts />
@@ -46,31 +42,39 @@ function MainWithCatalogAndContacts() {
 
 function CatalogPageWithFooter(){
   return (
-    <>
-    <div className='CatalogPage'>
+    <div className='Main'>
+      <Navbar />
       <CatalogPage />
-    </div>
       <Footer />
-      </>
+    </div>
   );
 }
 
 function AboutPageWithFooter(){
   return (
-    <>
-    <div className='AboutPage'>
+    <div className='Main'>
+      <Navbar />
       <AboutPage />
-    </div>
       <Footer />
-      </>
+    </div>
   );
 }
 
 function ContactsPageWithFooter() {
   return (
-    <div className='ContactsPage'>
+    <div className='Main'>
+      <Navbar />
       <ContactsPage />
       <Footer />
+    </div>
+  );
+}
+
+
+function AdminPageDisplay() {
+  return (
+    <div className='AdminPageDispaly'>
+      <AdminPage />
     </div>
   );
 }
