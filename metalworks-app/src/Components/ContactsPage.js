@@ -1,7 +1,4 @@
 
-
-
-
 function ContactsPage(){
     return(
         <h1>Hi</h1>

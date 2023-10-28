@@ -42,7 +42,7 @@ function MainWithCatalogAndContacts() {
 
 function CatalogPageWithFooter(){
   return (
-    <div className='Main'>
+    <div className='Catalogue-Page'>
       <Navbar />
       <CatalogPage />
       <Footer />
@@ -52,7 +52,7 @@ function CatalogPageWithFooter(){
 
 function AboutPageWithFooter(){
   return (
-    <div className='Main'>
+    <div className='About-Page'>
       <Navbar />
       <AboutPage />
       <Footer />
@@ -62,7 +62,7 @@ function AboutPageWithFooter(){
 
 function ContactsPageWithFooter() {
   return (
-    <div className='Main'>
+    <div className='Contacts-Page'>
       <Navbar />
       <ContactsPage />
       <Footer />

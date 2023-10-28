@@ -1,0 +1,41 @@
+.AboutPage {
+  text-align: center;
+  padding: 20px;
+}
+  
+.About-h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 32px;
+  text-align: center;
+}
+  
+.About-p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #666;
+}
+  
+  span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .AbouUs-Page {
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+    
+    span {
+      font-size: 16px;
+    }
+  }
