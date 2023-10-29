@@ -10,6 +10,7 @@ import Contacts from './Components/Home/Contacts';
 import ContactsPage from './Components/ContactsPage';
 import CatalogPage from './Components/CatalogPage';
 import AdminPage from './Components/AdminPage';
+import AdminDashboard from './Components/AdminDashboard';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/catalog" element={<CatalogPageWithFooter />} />
           <Route path="/contacts" element={<ContactsPageWithFooter />} />
           <Route path="/admin" element={<AdminPageDisplay />} />
+          <Route path="/admin/dashboard" element={<AdminDashboardDisplay />} />
         </Routes>
       </div>
     </Router>
@@ -62,6 +64,14 @@ function AdminPageDisplay() {
   return (
     <div className='AdminPageDispaly'>
       <AdminPage />
+    </div>
+  );
+}
+
+function AdminDashboardDisplay() {
+  return (
+    <div className='AdminDashboard'>
+      <AdminDashboard />
     </div>
   );
 }
