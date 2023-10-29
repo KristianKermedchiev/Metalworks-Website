@@ -17,9 +17,9 @@ function App() {
       <div className='Content'>
         <Routes>
           <Route path="/" element={<MainWithCatalogAndContacts />} />
-          <Route path="/Catalog" element={<CatalogPageWithFooter />} />
-          <Route path="/Contacts" element={<ContactsPageWithFooter />} />
-          <Route path="/Admin" element={<AdminPageDisplay />} />
+          <Route path="/catalog" element={<CatalogPageWithFooter />} />
+          <Route path="/contacts" element={<ContactsPageWithFooter />} />
+          <Route path="/admin" element={<AdminPageDisplay />} />
         </Routes>
       </div>
     </Router>
