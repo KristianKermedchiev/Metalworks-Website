@@ -48,16 +48,6 @@ function CatalogPageWithFooter(){
   );
 }
 
-// function AboutPageWithFooter(){
-//   return (
-//     <div className='About-Page'>
-//       <Navbar />
-//       <AboutPage />
-//       <Footer />
-//     </div>
-//   );
-// }
-
 function ContactsPageWithFooter() {
   return (
     <div className='Contacts-Page'>
@@ -67,7 +57,6 @@ function ContactsPageWithFooter() {
     </div>
   );
 }
-
 
 function AdminPageDisplay() {
   return (
