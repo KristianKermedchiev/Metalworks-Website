@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/CatalogPage.css";
 import { Link } from "react-router-dom";
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
 
 function CatalogPage() {
+  const [metals, setMetals] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const db = getFirestore();
+        const metalCollection = collection(db, 'Metals');
+        const snapshot = await getDocs(metalCollection);
+        const metalData = snapshot.docs.map(doc => doc.data());
+        setMetals(metalData);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <section className="CatalogPage">
       <div className="top-part">
@@ -19,68 +38,20 @@ function CatalogPage() {
         <table>
           <tbody>
             <tr>
-              <td className="table-header">Cell 1</td>
-              <td className="table-header">Cell 2</td>
+              <td className="table-header">Черни Метали</td>
+              <td className="table-header">Цена</td>
             </tr>
-            <tr>
-              <td>cell1-1</td>
-              <td>cell2-1</td>
-            </tr>
-            <tr>
-              <td>cell1-2</td>
-              <td>cell2-2</td>
-            </tr>
-            <tr>
-              <td>cell1-3</td>
-              <td>cell2-3</td>
-            </tr>
-            <tr>
-              <td>cell1-4</td>
-              <td>cell2-4</td>
-            </tr>
-            <tr>
-              <td>cell1-5</td>
-              <td>cell2-5</td>
-            </tr>
-            <tr>
-              <td>cell1-6</td>
-              <td>cell2-6</td>
-            </tr>
-            <tr>
-              <td>cell1-6</td>
-              <td>cell2-6</td>
-            </tr>
-            <tr>
-              <td>cell1-6</td>
-              <td>cell2-6</td>
-            </tr>
-            <tr>
-              <td>cell1-6</td>
-              <td>cell2-6</td>
-            </tr>
-            <tr>
-              <td>cell1-6</td>
-              <td>cell2-6</td>
-            </tr>
-            <tr>
-              <td>cell1-6</td>
-              <td>cell2-6</td>
-            </tr>
-            <tr>
-              <td>cell1-6</td>
-              <td>cell2-6</td>
-            </tr>
-            <tr>
-              <td>cell1-6</td>
-              <td>cell2-6</td>
-            </tr>
-            <tr>
-              <td>cell1-6</td>
-              <td>cell2-6</td>
-            </tr>
+            {metals.map((metal, index) => (
+              <tr key={index}>
+                <td>{metal.name}</td> 
+                <td>{metal.price}</td>
+                
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
+
       <div className="bottom-part">
         <p className="thick">
         Обявените цени са за юридически лица. При предаване на отпадъци от физически лица дружеството удържа 10% от стойността на предадения отпадък с цел събиране на данък съгласно ЗДДФЛ.

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './Components/Navbar';
-import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 
 import Footer from './Components/Footer';
@@ -11,8 +11,26 @@ import ContactsPage from './Components/ContactsPage';
 import CatalogPage from './Components/CatalogPage';
 import AdminPage from './Components/AdminPage';
 import AdminDashboard from './Components/AdminDashboard';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { app } from './firebase';
 
 function App() {
+
+  const auth = getAuth(app);
+
+  const [hasUser, setHasUser] = useState(false);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (authUser) => {
+      if (!authUser) {
+        setHasUser(false);
+      } else {
+        setHasUser(true);
+      }
+    });
+    return unsubscribe;
+  }, [auth]);
+
   return (
     <Router>
       <div className='Content'>
@@ -21,7 +39,7 @@ function App() {
           <Route path="/catalog" element={<CatalogPageWithFooter />} />
           <Route path="/contacts" element={<ContactsPageWithFooter />} />
           <Route path="/admin" element={<AdminPageDisplay />} />
-          <Route path="/admin/dashboard" element={<AdminDashboardDisplay />} />
+          <Route path="/admin/dashboard" element={<AdminDashboardDisplay hasUser={hasUser} />} />
         </Routes>
       </div>
     </Router>
@@ -40,7 +58,7 @@ function MainWithCatalogAndContacts() {
   );
 };
 
-function CatalogPageWithFooter(){
+function CatalogPageWithFooter() {
   return (
     <div className='Catalogue-Page'>
       <Navbar />
@@ -68,12 +86,26 @@ function AdminPageDisplay() {
   );
 }
 
-function AdminDashboardDisplay() {
+function AdminDashboardDisplay({ hasUser }) {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!hasUser) {
+      navigate('/');
+    }
+  }, );
+
+  if (!hasUser) {
+    return;
+  }
+
   return (
     <div className='AdminDashboard'>
       <AdminDashboard />
     </div>
   );
+
 }
 
 export default App;

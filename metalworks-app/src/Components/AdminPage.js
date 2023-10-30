@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import app from "../firebase";
+import { app } from "../firebase";
 import '../Styles/AdminPage.css';
 import { useNavigate } from "react-router-dom";
 
@@ -15,12 +15,10 @@ function AdminPage() {
     const auth = getAuth(app);
 
     signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log(user);
+      .then(() => {
         navigate('/admin/dashboard');
       })
-      .catch((error) => {
+      .catch(() => {
         console.log('error');
       });
   };
