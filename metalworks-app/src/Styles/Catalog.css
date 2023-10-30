@@ -37,17 +37,3 @@
 .Catalog-body button:hover {
     background-color: #172554;
 }
-
-@media (max-width: 768px) {
-    .Catalog-body {
-        padding: 10px;
-    }
-
-    .Catalog-body h2 {
-        font-size: 28px;
-    }
-
-    .Catalog-body p {
-        font-size: 18px;
-    }
-}

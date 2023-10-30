@@ -34,24 +34,22 @@ function CatalogPage() {
           <button>Виж повече</button>
         </Link>
       </div>
-
-      <div className="table">
-        <table>
-          <tbody>
-            <tr>
-              <td className="table-header">Черни Метали</td>
-              <td className="table-header">Цена</td>
-            </tr>
-            {metals.map((metal, index) => (
-              <tr key={index}>
-                <td>{metal.name}</td> 
-                <td>{metal.price}</td>
-                
+        <div className="table">
+          <table>
+            <tbody>
+              <tr>
+                <td className="table-header">Черни Метали</td>
+                <td className="table-header">Цени</td>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+              {metals.map((metal, index) => (
+                <tr key={index}>
+                  <td>{metal.name}</td> 
+                  <td>{metal.price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
       <div className="bottom-part">
         <p className="thick">
