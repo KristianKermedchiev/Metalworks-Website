@@ -10,7 +10,7 @@ function Contacts() {
       <p>Адрес: ул. „Първа българска армия“ 11, София</p>
       <p>Работно време: 08.30 - 16.30 всеки делничен ден</p>
 
-      <Link to="/contacts">
+      <Link to="/kontakti">
         <button>Виж повече</button>
       </Link>
 

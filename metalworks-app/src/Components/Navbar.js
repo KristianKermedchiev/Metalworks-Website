@@ -17,13 +17,13 @@ function Navbar() {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li> 
-          <Link to="/catalog" onClick={() => setMenuOpen(!menuOpen)} >Черни метали</Link>
+          <Link to="/cherni-metali" onClick={() => setMenuOpen(!menuOpen)} >Черни метали</Link>
         </li>
         <li> 
-          <Link to="/catalog" onClick={() => setMenuOpen(!menuOpen)} >Цветни метали</Link>
+          <Link to="/cvetni-metali" onClick={() => setMenuOpen(!menuOpen)} >Цветни метали</Link>
         </li>
         <li>
-          <Link to="/contacts" onClick={() => setMenuOpen(!menuOpen)}>Контакти</Link>
+          <Link to="/kontakti" onClick={() => setMenuOpen(!menuOpen)}>Контакти</Link>
         </li>
       </ul>
     </nav>
