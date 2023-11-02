@@ -10,12 +10,14 @@ function Catalog() {
             <p>
             КАТЕР 2004 ЕООД изкупува всички видове черни метали, които могат да бъдат рециклирани. Предлагаме на нашите клиенти винаги актуално високa цена за изкупуване.
             </p>
+            <div className='buttons'>
             <Link to="/catalog">
                 <button>Черни метали</button>
             </Link>
             <Link to="/catalog">
                 <button>Цветни метали</button>
             </Link>
+            </div>
         </section>
     );
 };
