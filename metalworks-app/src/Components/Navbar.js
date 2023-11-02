@@ -17,7 +17,10 @@ function Navbar() {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li> 
-          <Link to="/catalog" onClick={() => setMenuOpen(!menuOpen)} >Каталог</Link>
+          <Link to="/catalog" onClick={() => setMenuOpen(!menuOpen)} >Черни метали</Link>
+        </li>
+        <li> 
+          <Link to="/catalog" onClick={() => setMenuOpen(!menuOpen)} >Цветни метали</Link>
         </li>
         <li>
           <Link to="/contacts" onClick={() => setMenuOpen(!menuOpen)}>Контакти</Link>
