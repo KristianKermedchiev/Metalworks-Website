@@ -13,7 +13,6 @@ import AdminPage from './Components/AdminPage';
 import AdminDashboard from './Components/AdminDashboard';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { app } from './firebase';
-import ColorMetals from './Components/ColorMetals';
 
 function App() {
 
@@ -37,8 +36,7 @@ function App() {
       <div className='Content'>
         <Routes>
           <Route path="/" element={<MainWithCatalogAndContacts />} />
-          <Route path="/cherni-metali" element={<CatalogPageWithFooter />} />
-          <Route path="/cvetni-metali" element={<CvetnMetaliWIthFooter />} />
+          <Route path="/cenorazpis" element={<CatalogPageWithFooter />} />
           <Route path="/kontakti" element={<ContactsPageWithFooter />} />
           <Route path="/admin" element={<AdminPageDisplay />} />
           <Route path="/admin/dashboard" element={<AdminDashboardDisplay hasUser={hasUser} />} />
@@ -65,16 +63,6 @@ function CatalogPageWithFooter() {
     <div className='Catalogue-Page'>
       <Navbar />
       <CatalogPage />
-      <Footer />
-    </div>
-  );
-}
-
-function CvetnMetaliWIthFooter() {
-  return (
-    <div className='Catalogue-Page'>
-      <Navbar />
-      <ColorMetals />
       <Footer />
     </div>
   );

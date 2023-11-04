@@ -14,6 +14,15 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.Cvetni-Metali {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px; /* Reduce the font size for h1 elements for better mobile responsiveness */
+}
 
 .top-part h1 {
     color: #333;
@@ -22,7 +31,7 @@
 }
 
 .thick {
-    font-size: 22px;
+    font-size: 18px; /* Adjust the font size for better mobile responsiveness */
     line-height: 1.6;
     color: #0b0b0b;
     font-weight: bold;
@@ -30,12 +39,12 @@
 }
 
 .top-part p {
-    font-size: 22px;
+    font-size: 18px; /* Adjust the font size for better mobile responsiveness */
     line-height: 1.6;
 }
 
 .bottom-part p {
-    font-size: 22px;
+    font-size: 18px; /* Adjust the font size for better mobile responsiveness */
     line-height: 1.6;
 }
 
@@ -53,8 +62,8 @@
 
 table {
     border-collapse: collapse;
-    width: 100%;
-    table-layout: fixed;
+    width: 70%;
+    margin: 0 auto; 
     border: 1px solid #ccc;
 }
 
@@ -73,7 +82,19 @@ td {
 .bottom-part {
     margin-top: 20px;
 }
-/* 
-.empty{
-    margin-bottom: 60px;
-} */
+
+.bottom-button {
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-button:hover {
+    background-color: #172554;
+}
