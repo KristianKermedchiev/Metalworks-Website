@@ -21,7 +21,7 @@
 h1 {
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 24px; /* Reduce the font size for h1 elements for better mobile responsiveness */
+    font-size: 24px; 
 }
 
 .top-part h1 {
@@ -31,7 +31,7 @@ h1 {
 }
 
 .thick {
-    font-size: 18px; /* Adjust the font size for better mobile responsiveness */
+    font-size: 18px; 
     line-height: 1.6;
     color: #0b0b0b;
     font-weight: bold;
@@ -39,12 +39,12 @@ h1 {
 }
 
 .top-part p {
-    font-size: 18px; /* Adjust the font size for better mobile responsiveness */
+    font-size: 18px; 
     line-height: 1.6;
 }
 
 .bottom-part p {
-    font-size: 18px; /* Adjust the font size for better mobile responsiveness */
+    font-size: 18px; 
     line-height: 1.6;
 }
 

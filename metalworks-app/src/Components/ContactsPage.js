@@ -4,6 +4,10 @@ function ContactPage() {
     return (
         <div className="About-Page">
 
+            <div className='picture-div'>
+                
+            </div>
+
             <h1 className='About-h1'>КАТЕР 2004 ЕООД</h1>
 
             <p className='About-p'>

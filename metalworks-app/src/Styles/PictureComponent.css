@@ -1,0 +1,6 @@
+.picture{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../public/location.jpg');
+    border: 3px solid red;
+}
