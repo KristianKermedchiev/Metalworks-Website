@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/CatalogPage.css";
 import { Link } from "react-router-dom";
-import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { getFirestore, collection, getDocs, orderBy, query } from 'firebase/firestore';
 
 function CatalogPage() {
   const [metals, setMetals] = useState([]);
@@ -11,8 +11,9 @@ function CatalogPage() {
     const fetchData = async () => {
       try {
         const db = getFirestore();
-        const metalCollection = collection(db, 'Metals');
-        const snapshot = await getDocs(metalCollection);
+        const metalCollection1 = collection(db, 'Metals');
+        const metalQuery = query(metalCollection1, orderBy('id'));
+        const snapshot = await getDocs(metalQuery);
         const metalData = snapshot.docs.map(doc => doc.data());
         setMetals(metalData);
       } catch (error) {
@@ -22,13 +23,14 @@ function CatalogPage() {
 
     fetchData();
   }, []);
-
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
         const db = getFirestore();
-        const metalCollection = collection(db, 'ColorMetals');
-        const snapshot = await getDocs(metalCollection);
+        const metalCollection2 = collection(db, 'ColorMetals');
+        const metalQuery = query(metalCollection2, orderBy('id'));
+        const snapshot = await getDocs(metalQuery);
         const metalData = snapshot.docs.map(doc => doc.data());
         setColorMetals(metalData);
       } catch (error) {

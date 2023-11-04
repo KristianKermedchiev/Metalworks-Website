@@ -98,3 +98,9 @@ td {
 .bottom-button:hover {
     background-color: #172554;
 }
+
+@media (max-width: 768px) {
+    table{
+        width: 100%;
+    }
+}
