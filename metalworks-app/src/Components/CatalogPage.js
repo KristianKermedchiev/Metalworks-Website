@@ -71,7 +71,7 @@ function CatalogPage() {
             {metals.map((metal, index) => (
               <tr key={index}>
                 <td>{metal.name}</td>
-                <td>{metal.price}</td>
+                <td>{metal.price} <bold>лв/тон</bold></td>
               </tr>
             ))}
           </tbody>
@@ -90,7 +90,7 @@ function CatalogPage() {
             {colorMetals.map((metal, index) => (
               <tr key={index}>
                 <td>{metal.name}</td>
-                <td>{metal.price}</td>
+                <td>{metal.price} <bold>лв/кг</bold></td>
               </tr>
             ))}
           </tbody>
