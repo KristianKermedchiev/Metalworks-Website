@@ -52,7 +52,7 @@ function AboutUsPage() {
             </p>
 
             <Link to="/kontakti">
-                <button className="bottom-button">Свържете се с нас</button>
+                <button className="bottom-button-about">Свържете се с нас</button>
             </Link>
 
         </div>

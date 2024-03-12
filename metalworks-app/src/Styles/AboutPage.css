@@ -11,3 +11,22 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+.bottom-button-about{
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .bottom-button-about{
+        margin-bottom: 10px;
+    }
+}
