@@ -1,0 +1,13 @@
+.notification{
+    margin-top: 2rem;
+}
+.About-h1{
+    margin-top: 2rem;
+}
+.About-h2 {
+    margin-top: 2rem;
+}
+.download-link{
+    text-decoration: underline;
+    cursor: pointer;
+}

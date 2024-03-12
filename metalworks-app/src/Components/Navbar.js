@@ -22,9 +22,13 @@ function Navbar() {
         <li>
           <Link to="/kontakti" onClick={() => setMenuOpen(!menuOpen)}>Контакти</Link>
         </li>
+        <li>
+          <Link to="/za-nas" onClick={() => setMenuOpen(!menuOpen)}>За нас</Link>
+        </li>
       </ul>
     </nav>
   );
 }
 
 export default Navbar;
+

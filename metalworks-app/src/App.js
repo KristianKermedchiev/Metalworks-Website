@@ -13,6 +13,7 @@ import AdminPage from './Components/AdminPage';
 import AdminDashboard from './Components/AdminDashboard';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { app } from './firebase';
+import AboutPage from './Components/AboutPage';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<MainWithCatalogAndContacts />} />
           <Route path="/cenorazpis" element={<CatalogPageWithFooter />} />
           <Route path="/kontakti" element={<ContactsPageWithFooter />} />
+          <Route path="/za-nas" element={<AboutPageWithFooter />} />
           <Route path="/admin" element={<AdminPageDisplay />} />
           <Route path="/admin/dashboard" element={<AdminDashboardDisplay hasUser={hasUser} />} />
         </Routes>
@@ -76,6 +78,16 @@ function ContactsPageWithFooter() {
       <Footer />
     </div>
   );
+}
+
+function AboutPageWithFooter(){
+  return (
+    <div className='AboutUs-Page'>
+      <Navbar />
+      <AboutPage />
+      <Footer />
+    </div>
+  )
 }
 
 function AdminPageDisplay() {

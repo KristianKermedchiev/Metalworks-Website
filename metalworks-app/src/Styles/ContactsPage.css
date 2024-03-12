@@ -48,8 +48,8 @@ h2 {
     position: relative;
     padding-top: 33.33%;
     overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .map-holder iframe {
