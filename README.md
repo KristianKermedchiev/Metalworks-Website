@@ -7,7 +7,6 @@ Welcome to Metalworks! This is a React-based web application powered by Firebase
 - The website has no authentication/login however it has a hidden /admin page where the admin of the business can login to change the prices of the items.
 - Real-time Database Interaction - the prices in the business change daily so they have to be updated each morning.
 - The Website has an integrated location via Google Maps API
-- [Add more features]
 
 
 ## Technologies used
